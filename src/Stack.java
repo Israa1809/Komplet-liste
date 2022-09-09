@@ -10,13 +10,15 @@ public class Stack {
         return liste.removeFromHead();
     }
 
-    public void showStack(){
-        String[] string = liste.printFromHead().split(" ");
+    public String showStack(){
+        String res = liste.printFromHead();
+        String [] string = res.split(" ");
 
         for (String s : string) {
             System.out.println(s);
         }
         System.out.println(" ");
+    return res;
     }
 
 }
