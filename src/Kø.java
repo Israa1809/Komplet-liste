@@ -8,7 +8,8 @@ public class Kø {
         return liste.removeFromHead();
     }
 
-    public void showQueue() {
-        System.out.println(liste.printFromHead());
+    public String showQueue() {
+        String res = liste.printFromHead();
+        return res;
     }
 }

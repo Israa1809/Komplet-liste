@@ -27,5 +27,10 @@ class KøTest {
 
     @Test
     void showQueue() {
+        queue.add("Jeg");
+        queue.add("Hader");
+        queue.add("datastrukturer");
+        queue.add(":D");
+        assertEquals("Jeg Hader datastrukturer :D", queue.showQueue());
     }
 }
